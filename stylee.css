@@ -1,0 +1,133 @@
+/* -------------------- BODY -------------------- */
+body {
+    background: linear-gradient(135deg, #e0e7ff, #f0f4ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+/* -------------------- PROFILE CARD -------------------- */
+.profile-card {
+    background: white;
+    width: 420px;
+    padding: 40px 30px 50px 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------- PROFILE IMAGE -------------------- */
+.profile-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #4f46e5;
+}
+
+/* -------------------- HEADINGS -------------------- */
+h1 {
+    margin: 10px 0 5px;
+    font-size: 26px;
+    color: #111827;
+}
+
+h3 {
+    margin: 0 0 25px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* -------------------- BUTTONS -------------------- */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 12px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+button.active {
+    background: #6366f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------- CONTENT AREA -------------------- */
+.content-area {
+    text-align: left;
+    min-height: 150px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    background: #f9fafb;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+/* Hide all content by default */
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* Show active content */
+.content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* -------------------- LIST STYLING -------------------- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eef2ff;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 10px;
+    color: #4f46e5;
+    font-weight: 500;
+}
+
+/* -------------------- HEADINGS INSIDE CONTENT -------------------- */
+.content h2 {
+    margin-bottom: 10px;
+    color: #4f46e5;
+    font-size: 20px;
+}
+
+/* -------------------- PARAGRAPH TEXT -------------------- */
+.content p {
+    color: #374151;
+    line-height: 1.6;
+    font-size: 15px;
+}
